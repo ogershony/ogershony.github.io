@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omer Gershony | Software Engineer</title>
+    <title>Oren Gershony | Embodied AI</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,9 +12,8 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">OG</a>
+            <a href="#" class="nav-logo"></a>
             <ul class="nav-menu">
-                <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -30,11 +29,15 @@
         <section class="hero">
             <div class="hero-content">
                 <p class="hero-greeting">Hi, I'm</p>
-                <h1 class="hero-name">Omer Gershony</h1>
+                <h1 class="hero-name">Oren Gershony</h1>
                 <h2 class="hero-title">Software Engineer</h2>
                 <p class="hero-description">
-                    I build intelligent systems and applications that solve real-world problems.
-                    Passionate about AI, machine learning, and robotics.
+                    Passionate about building impactful intelligent systems. Interested in
+                    physical and embodied AI, specifically control and simulations.
+                    Interested in research.
+                </p>
+                <p class="hero-contact">
+                    Contact me at <a href="mailto:ogershony@gmail.com">ogershony@gmail.com</a>
                 </p>
                 <div class="hero-cta">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -42,57 +45,7 @@
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="code-block">
-                    <div class="code-header">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                    </div>
-                    <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
-  <span class="property">name</span>: <span class="string">"Omer Gershony"</span>,
-  <span class="property">skills</span>: [<span class="string">"AI/ML"</span>, <span class="string">"Python"</span>, <span class="string">"Full-Stack"</span>],
-  <span class="property">passion</span>: <span class="string">"Building intelligent systems"</span>,
-  <span class="property">status</span>: <span class="string">"Open to opportunities"</span>
-};</code></pre>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="about">
-            <div class="section-container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>
-                            I'm a software engineer with a passion for building intelligent systems
-                            that make a difference. My work spans across AI/ML, full-stack development,
-                            and robotics simulation.
-                        </p>
-                        <p>
-                            I enjoy tackling complex problems and turning ideas into functional,
-                            elegant solutions. Whether it's developing AI-powered applications,
-                            creating document processing pipelines, or simulating quadruped locomotion,
-                            I bring dedication and creativity to every project.
-                        </p>
-                        <div class="skills">
-                            <h3>Technologies I Work With</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Python</span>
-                                <span class="skill-tag">JavaScript</span>
-                                <span class="skill-tag">TypeScript</span>
-                                <span class="skill-tag">React</span>
-                                <span class="skill-tag">Node.js</span>
-                                <span class="skill-tag">PyTorch</span>
-                                <span class="skill-tag">LangChain</span>
-                                <span class="skill-tag">RAG</span>
-                                <span class="skill-tag">MuJoCo</span>
-                                <span class="skill-tag">JAX</span>
-                                <span class="skill-tag">PostgreSQL</span>
-                                <span class="skill-tag">Docker</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <img src="headshot.jpg" alt="Oren Gershony" class="hero-headshot">
             </div>
         </section>
 
@@ -122,51 +75,15 @@
                         </div>
                         <h3 class="project-title">Lexar AI</h3>
                         <p class="project-description">
-                            An intelligent document processing platform powered by AI. Features advanced
-                            natural language understanding for extracting insights from complex documents,
-                            with a robust ingestion pipeline for handling various file formats.
+                            An advanced trademark search platform powered by AI. Enables intelligent
+                            search and analysis of trademarks, streamlining the research process
+                            for legal and brand professionals.
                         </p>
                         <div class="project-tech">
-                            <span>Python</span>
-                            <span>LangChain</span>
-                            <span>OpenAI</span>
-                            <span>Vector DB</span>
-                            <span>FastAPI</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card featured">
-                        <div class="project-header">
-                            <div class="project-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                                    <polyline points="14 2 14 8 20 8"></polyline>
-                                    <line x1="16" y1="13" x2="8" y2="13"></line>
-                                    <line x1="16" y1="17" x2="8" y2="17"></line>
-                                    <polyline points="10 9 9 9 8 9"></polyline>
-                                </svg>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link" title="View Project">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 class="project-title">Lexar AI Ingestion</h3>
-                        <p class="project-description">
-                            A scalable data ingestion system designed for the Lexar AI platform.
-                            Handles document parsing, chunking, embedding generation, and vector
-                            storage for efficient semantic search and retrieval.
-                        </p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Apache Kafka</span>
-                            <span>Embeddings</span>
-                            <span>Pinecone</span>
+                            <span>Google Cloud</span>
+                            <span>Microservices Architecture</span>
+                            <span>Distributed Computing</span>
+                            <span>ETL/ELT</span>
                         </div>
                     </article>
 
@@ -188,119 +105,15 @@
                                 </a>
                             </div>
                         </div>
-                        <h3 class="project-title">Pupper Simulations</h3>
+                        <h3 class="project-title">Bittle Quadruped Locomotion</h3>
                         <p class="project-description">
                             Quadruped locomotion simulation using MuJoCo and Brax. Features physics-based
                             simulation, reinforcement learning environments, and GPU-accelerated training
                             for the Bittle quadruped robot.
                         </p>
                         <div class="project-tech">
-                            <span>Python</span>
-                            <span>MuJoCo</span>
-                            <span>Brax</span>
-                            <span>JAX</span>
-                            <span>RL</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-header">
-                            <div class="project-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                                </svg>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link" title="View Project">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 class="project-title">ResumeRAG</h3>
-                        <p class="project-description">
-                            An AI-powered resume analysis system using Retrieval-Augmented Generation.
-                            Parses resumes, extracts key information, and provides intelligent matching
-                            and recommendations based on job descriptions.
-                        </p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>RAG</span>
-                            <span>LLM</span>
-                            <span>NLP</span>
-                            <span>React</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-header">
-                            <div class="project-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="9" cy="7" r="4"></circle>
-                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                </svg>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link" title="View Project">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 class="project-title">LinkUp</h3>
-                        <p class="project-description">
-                            A social networking platform designed to connect people with shared interests.
-                            Features real-time messaging, event coordination, and intelligent matching
-                            algorithms to foster meaningful connections.
-                        </p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>Socket.io</span>
-                            <span>MongoDB</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-header">
-                            <div class="project-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                    <line x1="3" y1="9" x2="21" y2="9"></line>
-                                    <line x1="9" y1="21" x2="9" y2="9"></line>
-                                </svg>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link" title="View Project">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 class="project-title">Form Flow AI</h3>
-                        <p class="project-description">
-                            An intelligent form automation platform that uses AI to streamline form
-                            creation, validation, and processing. Features smart field suggestions,
-                            auto-completion, and workflow automation.
-                        </p>
-                        <div class="project-tech">
-                            <span>TypeScript</span>
-                            <span>React</span>
-                            <span>AI/ML</span>
-                            <span>PostgreSQL</span>
+                            <span>JAX/RL PPO</span>
+                            <span>MuJoCo/MJX</span>
                         </div>
                     </article>
 
@@ -331,7 +144,7 @@
                             </svg>
                             <span>LinkedIn</span>
                         </a>
-                        <a href="mailto:contact@ogershony.com" class="contact-link">
+                        <a href="mailto:ogershony@gmail.com" class="contact-link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                                 <polyline points="22,6 12,13 2,6"></polyline>
@@ -346,7 +159,7 @@
 
     <footer class="footer">
         <div class="footer-container">
-            <p>Designed & Built by Omer Gershony</p>
+            <p>Designed & Built by Oren Gershony</p>
         </div>
     </footer>
 

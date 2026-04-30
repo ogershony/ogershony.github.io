@@ -95,7 +95,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe elements for scroll reveal
-document.querySelectorAll('.project-card, .about-content, .contact-content').forEach(el => {
+document.querySelectorAll('.project-card, .contact-content').forEach(el => {
     observer.observe(el);
 });
 
@@ -124,44 +124,6 @@ function highlightNavigation() {
 }
 
 window.addEventListener('scroll', highlightNavigation);
-
-// ============================================
-// Typing effect for code block (optional enhancement)
-// ============================================
-
-function typeCode() {
-    const codeElement = document.querySelector('.code-block code');
-    if (!codeElement) return;
-
-    const originalHTML = codeElement.innerHTML;
-    const text = codeElement.textContent;
-
-    // Only run typing effect on initial load
-    if (sessionStorage.getItem('codeTyped')) {
-        return;
-    }
-
-    codeElement.innerHTML = '';
-    let index = 0;
-
-    function type() {
-        if (index < text.length) {
-            codeElement.textContent += text.charAt(index);
-            index++;
-            setTimeout(type, 15);
-        } else {
-            // Restore syntax highlighting after typing
-            codeElement.innerHTML = originalHTML;
-            sessionStorage.setItem('codeTyped', 'true');
-        }
-    }
-
-    // Start typing after a short delay
-    setTimeout(type, 800);
-}
-
-// Run typing effect on load
-document.addEventListener('DOMContentLoaded', typeCode);
 
 // ============================================
 // Project card hover effects

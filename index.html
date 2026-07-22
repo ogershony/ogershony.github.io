@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo"></a>
+            <a href="#" class="nav-logo">OG</a>
             <ul class="nav-menu">
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
             <button class="nav-toggle" aria-label="Toggle menu">
                 <span></span>
@@ -28,13 +28,14 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <p class="hero-greeting">Hi, I'm</p>
+                <p class="hero-greeting">// embodied ai engineer</p>
                 <h1 class="hero-name">Oren Gershony</h1>
-                <h2 class="hero-title">Software Engineer</h2>
+                <h2 class="hero-title">Robot learning · simulation · control</h2>
                 <p class="hero-description">
-                    Passionate about building impactful intelligent systems. Interested in
-                    physical and embodied AI, specifically control and simulations.
-                    Interested in research.
+                    I build intelligent systems that act in the physical world — embodied AI
+                    spanning reinforcement learning, control, and physics simulation. My work
+                    runs from humanoids and quadrupeds to robotic manipulation, and I'm most
+                    drawn to research that carries learned behavior from simulation into reality.
                 </p>
                 <p class="hero-contact">
                     Contact me at <a href="mailto:ogershony@gmail.com">ogershony@gmail.com</a>
@@ -45,23 +46,149 @@
                 </div>
             </div>
             <div class="hero-visual">
-                <img src="headshot.jpg" alt="Oren Gershony" class="hero-headshot">
+                <div class="operator-frame bracketed">
+                    <img src="headshot.jpg" alt="Oren Gershony" class="hero-headshot">
+                    <span class="operator-tag">[ human-in-the-loop ]</span>
+                </div>
             </div>
         </section>
 
         <section id="projects" class="projects">
             <div class="section-container">
-                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-head">
+                    <span class="section-eyebrow">selected runs</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
                 <div class="projects-grid">
 
                     <article class="project-card featured">
                         <div class="project-header">
-                            <div class="project-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                                    <path d="M2 17l10 5 10-5"></path>
-                                    <path d="M2 12l10 5 10-5"></path>
-                                </svg>
+                            <div class="project-id">
+                                <div class="project-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="5" r="2"></circle>
+                                        <path d="M12 7v5"></path>
+                                        <path d="M12 12l-4 3"></path>
+                                        <path d="M12 12l4 3"></path>
+                                        <path d="M12 8l-5 2"></path>
+                                        <path d="M12 8l5 2"></path>
+                                    </svg>
+                                </div>
+                                <span class="project-domain">humanoid</span>
+                            </div>
+                        </div>
+                        <div class="project-video-wrap bracketed">
+                            <video class="project-video" autoplay loop muted playsinline preload="metadata">
+                                <source src="urkl-policy.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <h3 class="project-title">URKL — Humanoid Motion Retargeting</h3>
+                        <p class="project-description">
+                            Taught the T800 humanoid to box. Retargeted 50+ unique boxing trajectories —
+                            generated by NVIDIA's Kimodo diffusion model — onto the T800 by using Amazon's
+                            Holosoma to define a joint mapping between the SOMA and T800 morphologies. Then
+                            trained a simulation-realistic motion-tracking policy in MjLab with PPO.
+                        </p>
+                        <div class="project-tech">
+                            <span>Holosoma</span>
+                            <span>Motion Retargeting</span>
+                            <span>Diffusion Models</span>
+                            <span>MjLab</span>
+                            <span>PPO</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-id">
+                                <div class="project-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                                        <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                                        <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                                    </svg>
+                                </div>
+                                <span class="project-domain">quadruped</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/triton-droids/pupper-simulations" class="project-link" target="_blank" rel="noopener" title="View on GitHub">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-video-toggle">
+                            <div class="project-video-wrap bracketed">
+                                <video class="project-video" autoplay loop muted playsinline preload="metadata">
+                                    <source src="pupper-16.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="video-toggle-buttons" role="group" aria-label="Training iteration">
+                                <button type="button" class="video-toggle-btn" data-src="pupper-20.mp4">Iter 12</button>
+                                <button type="button" class="video-toggle-btn" data-src="pupper-12.mp4">Iter 16</button>
+                                <button type="button" class="video-toggle-btn active" data-src="pupper-16.mp4">Iter 20</button>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Triton Pupper Locomotion</h3>
+                        <p class="project-description">
+                            Reinforcement-learning locomotion for the Triton Pupper quadruped in MuJoCo/MJX.
+                            Iterated on reward shaping to progressively refine the gait — the toggle above
+                            steps through training iterations 12 → 16 → 20, showing the reward-tuning
+                            progression from unstable early attempts to a stable walk.
+                        </p>
+                        <div class="project-tech">
+                            <span>JAX/RL PPO</span>
+                            <span>MuJoCo/MJX</span>
+                            <span>Reward Shaping</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-id">
+                                <div class="project-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                    </svg>
+                                </div>
+                                <span class="project-domain">manipulation</span>
+                            </div>
+                        </div>
+                        <div class="project-video-wrap bracketed">
+                            <video class="project-video" autoplay loop muted playsinline preload="metadata">
+                                <source src="pickplace-rollout.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <h3 class="project-title">Pick &amp; Place Manipulation</h3>
+                        <p class="project-description">
+                            A pick-and-place manipulation task tackled with imitation learning: used mplib
+                            to generate motion-planning demonstrations, then trained an MLP to imitate them
+                            via behavioral cloning. Also explored solving the task from scratch with pure
+                            reinforcement learning.
+                        </p>
+                        <div class="project-tech">
+                            <span>Imitation Learning</span>
+                            <span>mplib</span>
+                            <span>Behavioral Cloning</span>
+                            <span>RL</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-id">
+                                <div class="project-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                        <path d="M2 17l10 5 10-5"></path>
+                                        <path d="M2 12l10 5 10-5"></path>
+                                    </svg>
+                                </div>
+                                <span class="project-domain">systems</span>
                             </div>
                             <div class="project-links">
                                 <a href="#" class="project-link" title="View Project">
@@ -87,43 +214,16 @@
                         </div>
                     </article>
 
-                    <article class="project-card">
-                        <div class="project-header">
-                            <div class="project-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
-                                    <line x1="9" y1="9" x2="9.01" y2="9"></line>
-                                    <line x1="15" y1="9" x2="15.01" y2="9"></line>
-                                </svg>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/triton-droids/pupper-simulations" class="project-link" target="_blank" rel="noopener" title="View on GitHub">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 class="project-title">Bittle Quadruped Locomotion</h3>
-                        <p class="project-description">
-                            Quadruped locomotion simulation using MuJoCo and Brax. Features physics-based
-                            simulation, reinforcement learning environments, and GPU-accelerated training
-                            for the Bittle quadruped robot.
-                        </p>
-                        <div class="project-tech">
-                            <span>JAX/RL PPO</span>
-                            <span>MuJoCo/MJX</span>
-                        </div>
-                    </article>
-
                 </div>
             </div>
         </section>
 
         <section id="contact" class="contact">
             <div class="section-container">
-                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-head">
+                    <span class="section-eyebrow">contact</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                </div>
                 <div class="contact-content">
                     <p class="contact-text">
                         I'm always open to discussing new projects, creative ideas, or opportunities
@@ -159,7 +259,7 @@
 
     <footer class="footer">
         <div class="footer-container">
-            <p>Designed & Built by Oren Gershony</p>
+            <p><span class="footer-status"></span> designed &amp; built by oren gershony</p>
         </div>
     </footer>
 

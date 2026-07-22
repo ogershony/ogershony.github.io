@@ -126,37 +126,28 @@ function highlightNavigation() {
 window.addEventListener('scroll', highlightNavigation);
 
 // ============================================
-// Project card hover effects
+// Project video iteration toggle (Triton Pupper)
 // ============================================
 
-const projectCards = document.querySelectorAll('.project-card');
+document.querySelectorAll('.project-video-toggle').forEach(toggle => {
+    const video = toggle.querySelector('.project-video');
+    const source = video.querySelector('source');
+    const buttons = toggle.querySelectorAll('.video-toggle-btn');
 
-projectCards.forEach(card => {
-    card.addEventListener('mouseenter', function() {
-        // Subtle parallax effect on hover
-        this.addEventListener('mousemove', handleMouseMove);
-    });
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const src = button.dataset.src;
+            if (!src || source.getAttribute('src') === src) return;
 
-    card.addEventListener('mouseleave', function() {
-        this.removeEventListener('mousemove', handleMouseMove);
-        this.style.transform = '';
+            buttons.forEach(b => b.classList.remove('active'));
+            button.classList.add('active');
+
+            source.setAttribute('src', src);
+            video.load();
+            video.play().catch(() => {}); // ignore autoplay rejection
+        });
     });
 });
-
-function handleMouseMove(e) {
-    const card = e.currentTarget;
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-
-    const rotateX = (y - centerY) / 20;
-    const rotateY = (centerX - x) / 20;
-
-    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
-}
 
 // ============================================
 // Console Easter Egg

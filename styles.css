@@ -760,6 +760,15 @@ img { max-width: 100%; display: block; }
     color: var(--color-text-dim);
 }
 
+.book-topics {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    line-height: 1.6;
+    color: var(--color-text-dim);
+    margin-top: var(--spacing-sm);
+    opacity: 0.85;
+}
+
 /* Favorite marker — badge overlaid on the cover */
 .book-fav {
     position: absolute;

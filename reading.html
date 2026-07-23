@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oren Gershony | Reading</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">OG</a>
+            <ul class="nav-menu">
+                <li><a href="index.html#projects">projects</a></li>
+                <li><a href="reading.html" class="active">reading</a></li>
+                <li><a href="index.html#contact">contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="reading-hero">
+            <div class="section-container">
+                <p class="hero-greeting">// reading list</p>
+                <h1 class="reading-title">Books &amp; reading</h1>
+                <p class="reading-intro">
+                    A running shelf — the texts that shaped how I think about robots and
+                    learning, and a few novels for the off hours.
+                </p>
+            </div>
+        </section>
+
+        <section class="books-section">
+            <div class="section-container">
+                <div class="section-head">
+                    <span class="section-eyebrow">technical · robotics</span>
+                    <h2 class="section-title">Foundations I recommend</h2>
+                </div>
+                <div class="books-grid">
+
+                    <article class="book-card reading">
+                        <div class="book-cover-wrap">
+                            <span class="book-status">currently reading</span>
+                            <img class="book-cover" src="assets/covers/robotics-siciliano.jpg" alt="Foundations of Robotics — book cover" loading="lazy">
+                        </div>
+                        <span class="book-tag">robotics</span>
+                        <h3 class="book-title">Foundations of Robotics</h3>
+                        <p class="book-author">Siciliano, Villani, Oriolo &amp; De Luca</p>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-cover-wrap">
+                            <img class="book-cover" src="assets/covers/rl-sutton-barto.jpg" alt="Reinforcement Learning: An Introduction — book cover" loading="lazy">
+                        </div>
+                        <span class="book-tag">reinforcement learning</span>
+                        <h3 class="book-title">Reinforcement Learning: An Introduction</h3>
+                        <p class="book-author">Sutton &amp; Barto</p>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-cover-wrap">
+                            <img class="book-cover" src="assets/covers/ml-raschka.jpg" alt="Machine Learning with PyTorch and Scikit-Learn — book cover" loading="lazy">
+                        </div>
+                        <span class="book-tag">machine learning</span>
+                        <h3 class="book-title">Machine Learning with PyTorch and Scikit-Learn</h3>
+                        <p class="book-author">Sebastian Raschka</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="books-section">
+            <div class="section-container">
+                <div class="section-head">
+                    <span class="section-eyebrow">off the clock · fiction</span>
+                    <h2 class="section-title">On the nightstand</h2>
+                </div>
+                <div class="books-grid">
+
+                    <article class="book-card fiction favorite">
+                        <div class="book-cover-wrap">
+                            <span class="book-fav">★ my favorite</span>
+                            <img class="book-cover" src="assets/covers/enders-shadow.jpg" alt="Ender's Shadow — book cover" loading="lazy">
+                        </div>
+                        <span class="book-tag">sci-fi</span>
+                        <h3 class="book-title">Ender's Shadow</h3>
+                        <p class="book-author">Orson Scott Card</p>
+                    </article>
+
+                    <article class="book-card fiction">
+                        <div class="book-cover-wrap">
+                            <img class="book-cover" src="assets/covers/foundation.jpg" alt="Foundation — book cover" loading="lazy">
+                        </div>
+                        <span class="book-tag">sci-fi</span>
+                        <h3 class="book-title">Foundation</h3>
+                        <p class="book-author">Isaac Asimov</p>
+                    </article>
+
+                    <article class="book-card fiction">
+                        <div class="book-cover-wrap">
+                            <img class="book-cover" src="assets/covers/dune.jpg" alt="Dune — book cover" loading="lazy">
+                        </div>
+                        <span class="book-tag">sci-fi</span>
+                        <h3 class="book-title">Dune</h3>
+                        <p class="book-author">Frank Herbert</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="reading-list-section">
+            <div class="section-container">
+                <div class="section-head">
+                    <span class="section-eyebrow">recommendations</span>
+                    <h2 class="section-title">Send me one</h2>
+                </div>
+                <div class="reading-panel">
+                    <p class="reading-list-intro">
+                        Topics I'm digging into next. If you have a recommendation on any of
+                        these — or something else you think I'd like — I'd love to hear it.
+                    </p>
+                    <ul class="topic-list">
+                        <li>generative models as policy learning</li>
+                        <li>VLAs &amp; embodied foundation models</li>
+                        <li>world models</li>
+                        <li>3D perception &amp; spatial reasoning</li>
+                        <li>control theory</li>
+                        <li>constrained &amp; convex optimization</li>
+                    </ul>
+                    <p class="reading-cta-line">Email me at <span class="email-inline">ogershony[at]gmail.com</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p><span class="footer-status"></span> designed &amp; built by oren gershony</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

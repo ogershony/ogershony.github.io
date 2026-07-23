@@ -95,7 +95,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe elements for scroll reveal
-document.querySelectorAll('.project-card, .contact-content').forEach(el => {
+document.querySelectorAll('.project-card, .book-card, .contact-content').forEach(el => {
     observer.observe(el);
 });
 
